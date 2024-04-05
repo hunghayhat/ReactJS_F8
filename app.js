@@ -62,3 +62,18 @@ function logger1(...parameter) {
     console.log(parameter)
 }
 console.log(logger1(1,2,3,4,5,6,7,8))
+
+// spread(...)
+var array = ['Javascript', 'Ruby', 'PHP']
+var array2 = ['ReactJS', 'Dart']
+var array3 = [...array2,...array]
+
+console.log(array3)
+
+// modules: import / export
+
+import logger4 from './logger4.js'
+
+console.log(logger4)
+
+
