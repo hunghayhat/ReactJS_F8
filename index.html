@@ -4,19 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.production.min.js"></script> 
+    <script crossorigin src="https://unpkg.com/react@18.0.0/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18.0.0/umd/react-dom.production.min.js"></script> 
 
 </head>
 <body>
     <h1 id="heading">Hello guys</h1>
+    <div id="root"></div>
+    <script>
+        // react
+        const postItem = React.createElement(
+            'div',
+            {
+                className: 'post-item'
+            },
+            React.createElement(
+                'h2',
+                {
+                    title: 'Hoc React tai F8'
+                },
+                'Hoc ReactJS',
+                React.createElement('p', {},'Hoc ReactJS tu co ban')
+            )
+        )
 
-<!-- <script type ="module" src="app.js">
-   const h1 = document.createElement('h1')
+        // get root element
+        const container = document.getElementById('root')
 
-   h1.innerText = 'Hello guys'
-   console.log(h1)
-</script> -->
+        //React DOM - render UI
+        // DOM @17
+        // ReactDOM.render(postItem, root)
+
+        // DOM @18
+        const root = ReactDOM.createRoot(container)
+        root.render(postItem)
+    </script>
 
 <script src="DOM_learn.js">
     console.log(React.version)
