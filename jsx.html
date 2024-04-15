@@ -15,12 +15,26 @@
     <script type="text/babel">
         const reactCourse = 'React F8'
 
-        const ul = <ul>
-            <li>JavaScript</li>
-            <li>ReactJS</li>
-        </ul>
+        const courses = [
+            {
+                name: 'JavaScript',
+            },
+            {
+                name: 'C',
+            },
+            {
+                Name: 'C++'
+            }
+        ]
 
-        ReactDOM.render(ul, document.getElementById('root'))
+        const jsx = (
+            <React.Fragment>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+            </React.Fragment>
+        )
+
+        ReactDOM.render(jsx, document.getElementById('root'))
     </script>
 
 </body>
