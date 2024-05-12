@@ -1,0 +1,6 @@
+1. JSON - JavaScript Object Notation
+- Là một định dạng dữ liệu (chuỗi)
+- Các dạng dữ liệu có thể thể hiện: 
++ Number, Boolean, Null, Array, Object, String
+Chuyển đổi
+- Stringify / Parse
