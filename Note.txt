@@ -4,3 +4,7 @@
 + Number, Boolean, Null, Array, Object, String
 Chuyển đổi
 - Stringify / Parse
+
+2. Promise: là khái niệm sinh ra để xử lý các thao tác bất đồng bộ
+- Sync, Async
+- Các trạng thái của promise: pending, fulfilled, rejected
