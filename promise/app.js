@@ -9,21 +9,32 @@ var promise = new Promise(
         resolve('123')
     });
 
-promise
-    .then(function () {
-        return new Promise(function (resolve) {
-            setTimeout(resolve, 3000)
-        })
+var promise = Promise.resolve('Error!');
+
+promise 
+    .then(function (result) {
+        console.log('result: ', result);
     })
 
-    .then(function (data) {
-        console.log(data);
+    .catch(function(err) {
+        console.log('Err: ', err);
+    })
+   
+var promise1 = new Promise(
+    function(resolve) {
+        setTimeout(function() {
+            resolve([2, 3])
+        }, 2000);
+    }
+);
+
+var promise2 = Promise.reject('Toang')
+
+Promise.all([promise1, promise2])
+    .then(function([result1, result2]) {
+        console.log(result1.concat(result2));
     })
 
-
-    .catch(function (error) {
-        console.log(error);
-    })
-    .finally(function () {
-        console.log('Done');
-    })
+    .catch(function(err) {
+        console.log(err);
+    });
