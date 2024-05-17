@@ -7,4 +7,11 @@ Chuyển đổi
 
 2. Promise: là khái niệm sinh ra để xử lý các thao tác bất đồng bộ
 - Sync, Async
+.then, .catch
 - Các trạng thái của promise: pending, fulfilled, rejected
+
+3. fetch: lấy dữ liệu từ backend trả về
+//API (URL): appllication programing interface => cổng giao tiếp giữa các phần mềm
+
+//backend -> API -> fetch -> json/XML 
+// JSON.parse => JS types => render ra giao diện với HTML
