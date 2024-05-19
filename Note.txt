@@ -15,3 +15,4 @@ Chuyển đổi
 
 //backend -> API -> fetch -> json/XML 
 // JSON.parse => JS types => render ra giao diện với HTML
+

@@ -11,32 +11,26 @@
 </head>
 
 <body>
-    <div id="root"></div>
-    <script type="text/babel">
-        const reactCourse = 'React F8'
+    
+    <div>
+        <h2> List of courses</h2>
+        <ul id="list-courses">
+        
+        </ul>
+    </div>
 
-        const courses = [
-            {
-                name: 'JavaScript',
-            },
-            {
-                name: 'C',
-            },
-            {
-                Name: 'C++'
-            }
-        ]
+    <div>
+        <label>Name</label>
+        <input type="text" name="name">
+    </div>
 
-        const jsx = (
-            <React.Fragment>
-                <h1>Heading 1</h1>
-                <h2>Heading 3</h2>
-            </React.Fragment>
-        )
+    <div>
+        <label>Description</label>
+        <input type="text" name="description">
+    </div>
 
-        ReactDOM.render(jsx, document.getElementById('root'))
-    </script>
-
+    <button id="create">Create</button>
+    <script src="crud.js"></script>
 </body>
 
 </html>
